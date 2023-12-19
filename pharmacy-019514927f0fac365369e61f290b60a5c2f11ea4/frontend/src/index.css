@@ -1,0 +1,310 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+/* layout */
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: "Poppins";
+}
+header {
+  background: #fff;
+}
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a {
+  color: #333;
+  text-decoration: none;
+}
+.pages{
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* homepage */
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 100px;
+}
+.workout-details {
+  background: #fff;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+.workout-details h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  color: var(--primary);
+}
+.workout-details p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+.workout-details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 6px;
+  border-radius: 50%;
+  color: #333;
+}
+
+/* new workout form */
+label, input {
+  display: block;
+}
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+
+.search-bar {
+  margin-right: 10px;
+}
+.filter-controls {
+  margin-bottom: 10px;
+}
+
+.filter-controls button {
+  margin-right: 10px;
+}
+.workout-details.selected {
+  background-color: #e0e0e0; /* Choose your preferred highlight color */
+}
+
+.selected {
+  background-color: var(--primary); /* Change the background color to your desired highlight color */
+  color: #fff; /* Change the text color to ensure visibility */
+  /* You can add other styling properties as needed */
+}
+
+/* Add this CSS to your stylesheet */
+
+/* Resets some styles for uniformity */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.header {
+  background-color: #f4f4f4;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.main-title {
+  margin: 0;
+  color: #333;
+}
+
+.search-area {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.search-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.doctors-list {
+  padding: 20px;
+}
+
+/* DoctorDetails component */
+.doctor-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.doctor-details h4 {
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #5cb85c; /* Bootstrap's btn-success color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4cae4c; /* A slightly darker green */
+}
+.container {
+  position: relative;
+  z-index: 1;
+  text-align: center; /* Keeps your text alignment in the center */
+}
+
+.container::before {
+  content: "";
+  background-image: url('https://www.hindustantimes.com/ht-img/img/2023/07/02/550x309/-p-Who-is-an-Indian-doctor----p-_1688326471538.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: fixed; /* Fixed position to cover the entire browser window */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+/* Add styles for your content to ensure they are visible */
+.content {
+  position: relative;
+  z-index: 2;
+  background: rgba(200, 200, 200, 0.8);
+  padding: 20px;
+  border-radius: 2px;
+  /* Add more styles as needed */
+}
+/* Add this to your existing CSS */
+
+/* Style for the buttons */
+.link-button {
+  display: block;
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.link-button:hover {
+  background: darken(var(--primary), 10%);
+}
+
+/* Special style for the primary button */
+.link-button-primary {
+  background: var(--error);
+  font-weight: bold;
+}
+
+.link-button-primary:hover {
+  background: darken(var(--error), 10%);
+}
+
+/* Container for your links */
+.links-container {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.main-title {
+  color: var(--primary);
+  margin-bottom: 30px;
+}
+/* Ensures the header is consistent with the content area */
+header {
+  background: #fff; /* Matches the content area background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow like the cards */
+  padding: 10px 20px; /* Adjust padding to match content spacing */
+}
+
+/* If you have a logo or title in the header, ensure it matches the content style */
+header .logo {
+  font-family: 'Poppins', sans-serif; /* Assuming 'Poppins' is the font you are using */
+  font-size: 1.5em; /* Adjust font-size to match your design */
+  color: #333; /* Adjust color to match your design */
+}
+
+/* Style for navigation links in the header to match the content area */
+header nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block; /* or 'block' if you want them to be on separate lines */
+}
+
+/* Adjust this based on the specific layout of your header */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* Style for the buttons in the content area to match the header */
+.content button, .content a {
+  /* Assuming your buttons and links in content area are styled like this */
+  background-color: #1aac83; /* Primary color */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 9px 15px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.content button:hover, .content a:hover {
+  background-color: darken(#1aac83, 10%);
+}
+
+/* Optional: Adjust the container for the content to ensure spacing is consistent */
+.content {
+  padding: 20px; /* Match this to the header padding if needed */
+}
